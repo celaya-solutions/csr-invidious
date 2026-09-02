@@ -41,5 +41,6 @@ no API key, $0).
 <!-- graft:end -->
 ## Course edition change log
 
+- Added the CSR Noncommercial License to this course edition while preserving the bundled AGPL license.
 - Removed the optional root import record while keeping the required AGPL license and attribution notices.
 - Imported the upstream source as a Challenge project with preserved license and attribution. Student selection requires instructor approval.

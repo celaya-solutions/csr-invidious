@@ -1,4 +1,4 @@
-> **Celaya Solutions Research Course Edition — Challenge project.** Read [COURSE_EDITION.md](COURSE_EDITION.md) and the required third-party [LICENSE](LICENSE) before selecting it.
+> **Celaya Solutions Research Course Edition — Challenge project.** Read the [CSR Noncommercial License](CSR-NONCOMMERCIAL-LICENSE.md), [COURSE_EDITION.md](COURSE_EDITION.md), and the required third-party [AGPL License](LICENSE) before selecting it.
 
 <div align="center">
   <img src="assets/invidious-colored-vector.svg" width="192" height="192" alt="Invidious logo">
@@ -153,7 +153,7 @@ official regulations in your country. Furthermore, we refuse liability
 for any inappropriate use of Invidious, such as illegal downloading.
 This tool is provided to you in the spirit of free, open software.
 
-You may view the LICENSE in which this software is provided to you [here](./LICENSE).
+CSR-authored course-edition material and branding are provided under the [CSR Noncommercial License 1.0](CSR-NONCOMMERCIAL-LICENSE.md). The bundled Invidious software remains available under its original [GNU AGPL v3 License](LICENSE).
 
 >   16. Limitation of Liability.
 >
