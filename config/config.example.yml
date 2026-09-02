@@ -512,9 +512,9 @@ jobs:
 ## used for instance announcements, e.g.
 ##
 ## Accepted values: any string. HTML is accepted.
-## Default: <none>
+## Default: "Celaya Solutions Research Course Edition"
 ##
-#banner:
+#banner: "Celaya Solutions Research Course Edition"
 
 ##
 ## Subscribe to channels using PubSubHub (Google PubSubHubbub service).

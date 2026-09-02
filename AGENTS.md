@@ -41,4 +41,5 @@ no API key, $0).
 <!-- graft:end -->
 ## Course edition change log
 
+- Added the Celaya Solutions Research course banner and documented the frozen, no-upstream-sync policy.
 - Imported the upstream source as a Challenge project with preserved license and attribution. Student selection requires instructor approval.

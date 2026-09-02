@@ -146,7 +146,7 @@ class Config
   # Cache annotations requested from IA, will not cache empty annotations or annotations that only contain cards
   property cache_annotations : Bool = false
   # Optional banner to be displayed along top of page for announcements, etc.
-  property banner : String? = nil
+  property banner : String? = "Celaya Solutions Research Course Edition"
   # Enables 'Strict-Transport-Security'. Ensure that `domain` and all subdomains are served securely
   property hsts : Bool? = true
   # Disable proxying server-wide: options: 'dash', 'livestreams', 'downloads', 'local'
