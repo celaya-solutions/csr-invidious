@@ -41,4 +41,5 @@ no API key, $0).
 <!-- graft:end -->
 ## Course edition change log
 
+- Removed the optional root import record while keeping the required AGPL license and attribution notices.
 - Imported the upstream source as a Challenge project with preserved license and attribution. Student selection requires instructor approval.

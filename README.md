@@ -1,4 +1,4 @@
-> **Celaya Solutions Research Course Edition — Challenge project.** Read [COURSE_EDITION.md](COURSE_EDITION.md) and [UPSTREAM.md](UPSTREAM.md) before selecting it.
+> **Celaya Solutions Research Course Edition — Challenge project.** Read [COURSE_EDITION.md](COURSE_EDITION.md) and the required third-party [LICENSE](LICENSE) before selecting it.
 
 <div align="center">
   <img src="assets/invidious-colored-vector.svg" width="192" height="192" alt="Invidious logo">
