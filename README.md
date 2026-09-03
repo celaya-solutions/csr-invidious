@@ -1,168 +1,72 @@
-> **Celaya Solutions Research Course Edition — Challenge project.** Read [COURSE_EDITION.md](COURSE_EDITION.md) and [UPSTREAM.md](UPSTREAM.md) before selecting it.
+> **Celaya Solutions Research Course Edition. Challenge project.** Read [COURSE_EDITION.md](COURSE_EDITION.md) and [UPSTREAM.md](UPSTREAM.md) before you pick it. An instructor has to approve this one. Use fake data only.
 
 <div align="center">
-  <img src="assets/invidious-colored-vector.svg" width="192" height="192" alt="Invidious logo">
-  <h1>Invidious</h1>
-
-  <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">
-    <img alt="License: AGPLv3" src="https://shields.io/badge/License-AGPL%20v3-blue.svg">
-  </a>
-  <a href="https://github.com/iv-org/invidious/actions">
-    <img alt="Build Status" src="https://github.com/iv-org/invidious/workflows/Invidious%20CI/badge.svg">
-  </a>
-  <a href="https://github.com/iv-org/invidious/commits/master">
-    <img alt="GitHub commits" src="https://img.shields.io/github/commit-activity/y/iv-org/invidious?color=red&label=commits">
-  </a>
-  <a href="https://github.com/iv-org/invidious/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/iv-org/invidious?color=important">
-  </a>
-  <a href="https://github.com/iv-org/invidious/pulls">
-    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/iv-org/invidious?color=blueviolet">
-  </a>
-  <a href="https://hosted.weblate.org/engage/invidious/">
-    <img alt="Translation Status" src="https://hosted.weblate.org/widgets/invidious/-/translations/svg-badge.svg">
-  </a>
-
-  <h3>An open source alternative front-end to YouTube</h3>
-
-  <a href="https://invidious.io/">Website</a>
-  &nbsp;•&nbsp;
-  <a href="https://instances.invidious.io/">Instances list</a>
-  &nbsp;•&nbsp;
-  <a href="https://docs.invidious.io/faq/">FAQ</a>
-  &nbsp;•&nbsp;
-  <a href="https://docs.invidious.io/">Documentation</a>
-  &nbsp;•&nbsp;
-  <a href="#contribute">Contribute</a>
-  &nbsp;•&nbsp;
-  <a href="https://invidious.io/donate/">Donate</a>
-
-  <h5>Chat with us:</h5>
-  <a href="https://matrix.to/#/#invidious:matrix.org">
-    <img alt="Matrix" src="https://img.shields.io/matrix/invidious:matrix.org?label=Matrix&color=darkgreen">
-  </a>
-  <a href="https://web.libera.chat/?channel=#invidious">
-    <img alt="Libera.chat (IRC)" src="https://img.shields.io/badge/IRC%20%28Libera.chat%29-%23invidious-darkgreen">
-  </a>
-  <br>
-  <a rel="me" href="https://social.tchncs.de/@invidious">
-  <img alt="Fediverse: @invidious@social.tchncs.de" src="https://img.shields.io/badge/Fediverse-%40invidious%40social.tchncs.de-darkgreen">
-  </a>
-  <br>
-  <a href="https://invidious.io/contact/">
-  <img alt="E-mail" src="https://img.shields.io/badge/E%2d%2dmail-darkgreen">
-  </a>
+  <img src="assets/invidious-colored-vector.svg" width="140" height="140" alt="Invidious logo">
 </div>
 
+# Invidious
 
-## Screenshots
+Project 08 on the [Zero to Agent project shelf](https://zerotoagent.org/course/landing.html#projects). Second of the four Challenge projects.
 
-| Player                              | Preferences                         | Subscriptions                         |
-|-------------------------------------|-------------------------------------|---------------------------------------|
-| ![](screenshots/01_player.png)      | ![](screenshots/02_preferences.png) | ![](screenshots/03_subscriptions.png) |
-| ![](screenshots/04_description.png) | ![](screenshots/05_preferences.png) | ![](screenshots/06_subscriptions.png) |
+Invidious is a different front door for a video site. You watch the videos through it instead of through the site itself: no ads, no tracking, no account, and it works with JavaScript turned off. You can follow channels without an account anywhere else.
 
+This is a copy of the real Invidious project, kept for the course. The name, the logo, and its license are its own, and they stay.
 
-## Features
+## Why this one is a Challenge
 
-**User features**
-- Lightweight
-- No ads
-- No tracking
-- No JavaScript required
-- Light/Dark themes
-- Customizable homepage
-- Subscriptions independent from Google
-- Notifications for all subscribed channels
-- Audio-only mode (with background play on mobile)
-- Support for Reddit comments
-- [Available in many languages](locales/), thanks to [our translators](#contribute)
+The language is Crystal, and the database is PostgreSQL. The course teaches neither, and the six Core projects are the same amount of work in a language the class shares.
 
-**Data import/export**
-- Import subscriptions from YouTube, NewPipe and FreeTube
-- Import watch history from YouTube and NewPipe
-- Export subscriptions to NewPipe and FreeTube
-- Import/Export Invidious user data
+But the real reason it is a Challenge is worth reading twice, because it is the whole lesson of this project.
 
-**Technical features**
-- Embedded video support
-- [Developer API](https://docs.invidious.io/api/)
-- Does not use official YouTube APIs
-- No Contributor License Agreement (CLA)
+**Invidious works by reading a website nobody promised it could read.** The video service it depends on can change its pages any morning, without telling anyone, and when that happens Invidious stops working. Not because someone wrote a bug. Because something outside the code moved. Public copies of Invidious break this way regularly, and the people running them find out from users.
 
+That is a thing worth building on purpose, once, while it is safe to. Most software you will write depends on something you do not control, and the difference between a good build and a bad one is whether it tells you clearly when the thing it depends on has moved. Take this one if that is the problem you want.
 
-## Quick start
+Do not take it if you need the demo to work on a specific night. It might not, and that will not be your fault, and it will still be your demo.
 
-**Using Invidious:**
+## What you owe before an instructor will approve it
 
-- [Select a public instance from the list](https://instances.invidious.io) and start watching videos right now!
+This project does not get the shared course setup, so bring a written plan first:
 
-**Hosting Invidious:**
+- Where it will run, and how you will get PostgreSQL for it.
+- What you will change, given that you do not know Crystal yet.
+- What you will show if the outside service is broken that night.
 
-- [Follow the installation instructions](https://docs.invidious.io/installation/)
+Then the same five things every project on the shelf has to hit:
 
+1. A change you can see on the screen.
+2. A change to the server or to what gets stored.
+3. The frontend live on Vercel.
+4. The backend running on Railway, still running tomorrow.
+5. A three minute demo: the problem, the before, the after.
 
-## Documentation
+Note that this one is a single program that serves its own pages, so the Vercel and Railway split the Core projects use does not apply to it as written. Sorting that out is part of your plan.
 
-The full documentation can be accessed online at https://docs.invidious.io/
+## What is in here
 
-The documentation's source code is available in this repository:
-https://github.com/iv-org/documentation
+| Path | What it is |
+| --- | --- |
+| `src/invidious/` | The whole application, in Crystal |
+| `src/invidious/views/` | The pages, as templates |
+| `config/` | Configuration, including the database connection |
+| `locales/` | Translations |
+| `spec/` | Tests |
+| `docker/`, `kubernetes/`, `nix/` | Ways to run it |
 
-### Extensions
+## Running it
 
-We highly recommend the use of [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect#get),
-a browser extension that automatically redirects YouTube URLs to any Invidious instance and replaces
-embedded YouTube videos on other websites with Invidious.
-
-The documentation contains a list of browser extensions that we recommended to use along with Invidious.
-
-You can read more here: https://docs.invidious.io/applications/
-
-
-## Contribute
-
-### Code
-
-1.  Fork it ( https://github.com/iv-org/invidious/fork ).
-1.  Create your feature branch (`git checkout -b my-new-feature`).
-1.  Stage your files (`git add .`).
-1.  Commit your changes (`git commit -m 'Add some feature'`).
-1.  Push to the branch (`git push origin my-new-feature`).
-1.  Create a new pull request ( https://github.com/iv-org/invidious/compare ).
-
-### Translations
-
-We use [Weblate](https://weblate.org) to manage Invidious translations.
-
-You can suggest new translations and/or correction here: https://hosted.weblate.org/engage/invidious/.
-
-Creating an account is not required, but recommended, especially if you want to contribute regularly.
-Weblate also allows you to log-in with major SSO providers like GitHub, GitLab, BitBucket, Google, ...
-
-
-## Projects using Invidious
-
-A list of projects and extensions for or utilizing Invidious can be found in the documentation: https://docs.invidious.io/applications/
+Running it needs Crystal and a PostgreSQL database, and it is not a `pnpm install` away. The project keeps its own installation guide at <https://docs.invidious.io/installation/>, and its full documentation at <https://docs.invidious.io/>. Use those; the course does not have its own version.
 
 ## Liability
 
-We take no responsibility for the use of our tool, or external instances
-provided by third parties. We strongly recommend you abide by the valid
-official regulations in your country. Furthermore, we refuse liability
-for any inappropriate use of Invidious, such as illegal downloading.
-This tool is provided to you in the spirit of free, open software.
+The upstream project's own words on this, kept because they still apply:
 
-You may view the LICENSE in which this software is provided to you [here](./LICENSE).
+> We take no responsibility for the use of our tool, or external instances provided by third parties. We strongly recommend you abide by the valid official regulations in your country. Furthermore, we refuse liability for any inappropriate use of Invidious, such as illegal downloading. This tool is provided to you in the spirit of free, open software.
 
->   16. Limitation of Liability.
->
-> IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
-WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
-THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
-GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
-USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
-DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
-PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
-EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
-SUCH DAMAGES.
+## Source and license
+
+Invidious is licensed under the GNU Affero General Public License version 3. The full license is in [LICENSE](LICENSE) and it applies to this copy, including the part that says if you run a modified version where other people can reach it, you have to offer them your source.
+
+The source project, the exact commit, and the course status are recorded in [UPSTREAM.md](UPSTREAM.md). The Invidious name, logo, and copyright are the upstream project's and stay exactly as they are. This copy is frozen: it has no link back to the source project and does not take its updates, so do not open pull requests upstream from here.
+
+This is a course edition, not a product, and it does not claim to be Invidious. It is free and noncommercial, and the Celaya Solutions Research Course Edition notice stays on it.
